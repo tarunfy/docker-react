@@ -26,7 +26,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Nextjsss
+          Learn react
         </a>
         <span>Changed!!</span>
       </header>
