@@ -1,7 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import axios from "axios";
+import { useEffect } from "react";
 
 function App() {
+  const data = async () => {
+    const res = await axios.get("https://jsonplaceholder.typicode.com/todos");
+    console.log(res.data);
+  };
+
+  useEffect(() => {
+    data();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,8 +26,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Nextjsss
         </a>
+        <span>Changed!!</span>
       </header>
     </div>
   );
